@@ -13,6 +13,4 @@ On this site you'll find my blog posts about different security and general comp
 
 Most of this content is updated following my learning, some information may be incorrect due to when it was written or just my understanding at the time. Feel free to get in contact with me if you spot any errors.
 
-```
-All code and content written on this page is protected under the Creative Commons Attribution 4.0 International and GNU General Public License v3.0, respectivelly. Happy hacking!
-```
+All code and content written on this site is licensed under the Creative Commons Attribution 4.0 and GNU General Public License v3.0, respectivelly. Happy hacking!{: .notice}
