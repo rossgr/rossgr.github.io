@@ -1,0 +1,15 @@
+---
+layout: archive
+permalink: /writeups/
+title: 'CTF Write-Ups'
+author_profile: true
+redirect_from:
+  - /wordpress/writeups/
+---
+
+{% include base_path %} {% capture written_year %}'None'{% endcapture %} {% for
+writeup in site.writeups %} {% capture year %}{{ writeup.date | date: '%Y' }}{%
+endcapture %} {% if year != written_year %}
+<h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+{% capture written_year %}{{ year }}{% endcapture %} {% endif %} {% include
+archive-single.html %} {% endfor %}
