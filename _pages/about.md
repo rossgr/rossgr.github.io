@@ -9,10 +9,10 @@ redirect_from:
 
 ![Cat working on a computer.](/images/8c3NaCB.jpg)
 
-On this site you'll find my blog posts about different security and general computing topics, some write-ups for CTF exercises, some programming projects and some tutorials on how to use certain tools and techniques.
+On this site you'll find my blog posts about different security and general computing topics, write-ups for CTF exercises, programming projects and tutorials on how to use certain tools and techniques.
 
 Most of this content is updated following my learning, some information may be incorrect due to when it was written or just my understanding at the time. Feel free to get in contact with me if you spot any errors.
 
-<aside>
+```
 All code and content written on this page is protected under the Creative Commons Attribution 4.0 International and GNU General Public License v3.0, respectivelly. Happy hacking!
-</aside>
+```
