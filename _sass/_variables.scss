@@ -66,7 +66,7 @@ $code-background-color: #fafafa;
 $code-background-color-dark: $light-gray;
 $text-color: $dark-gray;
 
-$primary-color: #7a8288;
+$primary-color: #dfdfdf;
 $success-color: #62c462;
 $warning-color: #f89406;
 $danger-color: #ee5f5b;
@@ -104,7 +104,7 @@ $link-color: $info-color;
 $link-color-hover: mix(#000, $link-color, 25%);
 $link-color-visited: mix(#fff, $link-color, 25%);
 $masthead-link-color: $primary-color;
-$masthead-link-color-hover: mix(#000, $primary-color, 25%);
+$masthead-link-color-hover: #b1b1b1;
 
 /*
    Breakpoints
