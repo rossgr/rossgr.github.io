@@ -26,14 +26,14 @@ author:
   pronouns: # example: "she/her"
   bio: 'Cyber Security Student'
   location: 'Manchester, UK'
-  employer: 'Manchester Metropolitan University'
+  employer: 'MMU'
   uri: # URL
-  email: 'rossgreenall@gmail.com'
+  email: 
 
   # Academic websites
   arxiv: # URL - Update with the correct link to your profile
   googlescholar: # 'https://scholar.google.com/citations?user=PS_CX0AAAAAJ'
-  tryhackme: https://tryhackme.com/rossgr
+  tryhackme: https://tryhackme.com/p/rossgr
   impactstory: # URL
   orcid:
   semantic: # URL
