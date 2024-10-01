@@ -3,12 +3,12 @@ permalink: /library/
 title: 'Library'
 ---
 
-## Links, books and resources. 
+# Some useful resources. 
 
-### Links
+## Links
 
-### Books
+## Books
 
-### Videos 
+## Videos 
 
-### Other
+## Other
