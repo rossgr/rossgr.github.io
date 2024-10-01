@@ -6,3 +6,5 @@ main:
     url: /blog/
   - title: 'Projects'
     url: /projects/
+  - title: 'Library'
+    url: /library/
