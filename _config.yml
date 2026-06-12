@@ -1,0 +1,98 @@
+# ─────────────────────────────────────────────
+# Site configuration
+# Edit the values below to personalise the site.
+# ─────────────────────────────────────────────
+
+title: "Your Name"
+tagline: "MSc Cyber Security Student & Security Researcher"
+description: >-
+  Personal site featuring security writeups, research papers and
+  projects from my journey into cyber security.
+
+# This MUST match your GitHub Pages URL.
+# If your repo is named "username.github.io", set baseurl to ""
+# If your repo is named anything else (e.g. "my-blog"), set baseurl to "/my-blog"
+url: "https://yourusername.github.io"
+baseurl: ""
+
+# Author / contact details — shown in the bio card and footer
+author:
+  name: "Your Name"
+  role: "MSc Cyber Security Student"
+  bio: >-
+    Cyber security postgraduate with a focus on offensive security,
+    digital forensics and applied research. I write up CTF challenges,
+    document personal projects and share research as I work through
+    my degree.
+  location: "United Kingdom"
+  avatar: ""               # set to e.g. /assets/images/avatar.jpg once you've added a photo
+  email: "you@example.com"
+  github: "yourusername"
+  linkedin: "yourusername"
+  twitter: ""        # leave blank to hide
+  tryhackme: ""       # leave blank to hide
+  hackthebox: ""      # leave blank to hide
+  cv: ""              # path to a PDF CV, e.g. /assets/cv.pdf — leave blank to hide
+
+# ─────────────────────────────────────────────
+# Build settings — leave as-is unless you know what you're doing
+# ─────────────────────────────────────────────
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections power the three content types on this site.
+# Add new content by dropping a markdown file into the matching
+# folder — no other configuration required.
+collections:
+  writeups:
+    output: true
+    permalink: /writeups/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+  papers:
+    output: true
+    permalink: /papers/:path/
+
+# Default front matter applied to every file, so you don't have to
+# repeat "layout: ..." in every post.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "writeups"
+    values:
+      layout: "writeup"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "papers"
+    values:
+      layout: "paper"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

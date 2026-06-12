@@ -1,0 +1,160 @@
+---
+layout: default
+title: Home
+---
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div>
+      <p class="hero__eyebrow">// {{ site.author.role }}</p>
+      <h1>Hi, I'm {{ site.author.name }}.</h1>
+      <p class="hero__bio">{{ site.author.bio }}</p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="{{ '/writeups/' | relative_url }}">Read my writeups</a>
+        <a class="btn btn--ghost" href="{{ '/projects/' | relative_url }}">View projects</a>
+        <a class="btn btn--ghost" href="{{ '/contact/' | relative_url }}">Get in touch</a>
+      </div>
+    </div>
+
+    <aside class="profile-sheet" aria-label="Profile summary">
+      <div class="profile-sheet__header">Profile</div>
+      <div class="profile-sheet__body">
+        {% if site.author.avatar and site.author.avatar != "" %}
+          <img class="profile-sheet__avatar" src="{{ site.author.avatar | relative_url }}" alt="Portrait of {{ site.author.name }}">
+        {% else %}
+          <div class="profile-sheet__avatar--placeholder" aria-hidden="true">
+            {{ site.author.name | slice: 0, 1 }}
+          </div>
+        {% endif %}
+
+        <dl>
+          <dt>Name</dt>
+          <dd>{{ site.author.name }}</dd>
+
+          <dt>Focus</dt>
+          <dd>{{ site.author.role }}</dd>
+
+          {% if site.author.location %}
+          <dt>Location</dt>
+          <dd>{{ site.author.location }}</dd>
+          {% endif %}
+        </dl>
+
+        <div class="profile-sheet__links">
+          {% if site.author.github %}<a class="btn btn--ghost btn--small" href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+          {% if site.author.linkedin %}<a class="btn btn--ghost btn--small" href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+          {% if site.author.cv and site.author.cv != "" %}<a class="btn btn--ghost btn--small" href="{{ site.author.cv | relative_url }}" target="_blank" rel="noopener">CV</a>{% endif %}
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Latest entries</p>
+        <h2>Writeups</h2>
+      </div>
+      <a class="section-link" href="{{ '/writeups/' | relative_url }}">View all writeups &rarr;</a>
+    </div>
+
+    {% assign writeups = site.writeups | sort: "date" | reverse %}
+    {% if writeups.size > 0 %}
+    <div class="card-grid">
+      {% for item in writeups limit: 3 %}
+      <article class="card card--writeup">
+        <div class="card__meta">
+          {% if item.date %}<span>{{ item.date | date: "%d %b %Y" }}</span>{% endif %}
+          {% if item.platform %}<span>&middot; {{ item.platform }}</span>{% endif %}
+        </div>
+        <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+        {% if item.summary %}<p>{{ item.summary }}</p>{% endif %}
+        {% if item.tags %}
+        <div class="card__footer">
+          {% for tag in item.tags limit: 4 %}<span class="tag">{{ tag }}</span>{% endfor %}
+        </div>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+      <p>No writeups yet. Add a markdown file to <code>_writeups/</code> to get started.</p>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="section section--tight" style="border-top: 1px solid var(--color-line);">
+  <div class="wrap">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Things I've built</p>
+        <h2>Projects</h2>
+      </div>
+      <a class="section-link" href="{{ '/projects/' | relative_url }}">View all projects &rarr;</a>
+    </div>
+
+    {% assign projects = site.projects | sort: "date" | reverse %}
+    {% if projects.size > 0 %}
+    <div class="card-grid">
+      {% for item in projects limit: 3 %}
+      <article class="card card--project">
+        <div class="card__meta">
+          {% if item.status %}<span>{{ item.status }}</span>{% endif %}
+        </div>
+        <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+        {% if item.summary %}<p>{{ item.summary }}</p>{% endif %}
+        {% if item.tags %}
+        <div class="card__footer">
+          {% for tag in item.tags limit: 4 %}<span class="tag">{{ tag }}</span>{% endfor %}
+        </div>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+      <p>No projects yet. Add a markdown file to <code>_projects/</code> to get started.</p>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="section section--tight" style="border-top: 1px solid var(--color-line);">
+  <div class="wrap">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Research &amp; coursework</p>
+        <h2>Papers</h2>
+      </div>
+      <a class="section-link" href="{{ '/papers/' | relative_url }}">View all papers &rarr;</a>
+    </div>
+
+    {% assign papers = site.papers | sort: "date" | reverse %}
+    {% if papers.size > 0 %}
+    <div class="card-grid">
+      {% for item in papers limit: 3 %}
+      <article class="card card--paper">
+        <div class="card__meta">
+          {% if item.date %}<span>{{ item.date | date: "%b %Y" }}</span>{% endif %}
+        </div>
+        <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+        {% if item.summary %}<p>{{ item.summary }}</p>{% endif %}
+        {% if item.tags %}
+        <div class="card__footer">
+          {% for tag in item.tags limit: 4 %}<span class="tag">{{ tag }}</span>{% endfor %}
+        </div>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+      <p>No papers yet. Add a markdown file to <code>_papers/</code> to get started.</p>
+    </div>
+    {% endif %}
+  </div>
+</section>

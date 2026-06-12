@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<div class="page-header">
+  <div class="wrap">
+    <p class="eyebrow"><a href="{{ '/papers/' | relative_url }}">&larr; All papers</a></p>
+    <span class="badge badge--paper">Paper</span>
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}<p class="hero__bio">{{ page.summary }}</p>{% endif %}
+
+    <div class="entry-meta">
+      {% if page.date %}<span>{{ page.date | date: "%-d %B %Y" }}</span>{% endif %}
+      {% if page.authors %}<span>{{ page.authors }}</span>{% endif %}
+      {% if page.venue %}<span>{{ page.venue }}</span>{% endif %}
+    </div>
+
+    {% if page.pdf %}
+    <div class="hero__actions" style="margin-top: 1.2rem;">
+      <a class="btn btn--primary" href="{{ page.pdf | relative_url }}" target="_blank" rel="noopener">Download PDF</a>
+    </div>
+    {% endif %}
+
+    {% if page.tags %}
+    <div class="card__footer" style="margin-top: 0.9rem;">
+      {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<div class="wrap">
+  <article class="entry-content">
+    {{ content }}
+  </article>
+</div>
