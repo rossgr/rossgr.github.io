@@ -3,35 +3,33 @@
 # Edit the values below to personalise the site.
 # ─────────────────────────────────────────────
 
-title: "Your Name"
-tagline: "MSc Cyber Security Student & Security Researcher"
+title: "Ross Greenall"
+tagline: "BSc (Hons) Cyber Security Graduate (First-Class) | Offensive Security Enthusiast"
 description: >-
   Personal site featuring security writeups, research papers and
-  projects from my journey into cyber security.
+  projects.
 
 # This MUST match your GitHub Pages URL.
 # If your repo is named "username.github.io", set baseurl to ""
 # If your repo is named anything else (e.g. "my-blog"), set baseurl to "/my-blog"
-url: "https://yourusername.github.io"
+url: "https://rossgr.github.io"
 baseurl: ""
 
 # Author / contact details — shown in the bio card and footer
 author:
-  name: "Your Name"
-  role: "MSc Cyber Security Student"
+  name: "Ross Greenall"
+  role: "BSc (Hons) Cyber Security Graduate (First-Class)"
   bio: >-
-    Cyber security postgraduate with a focus on offensive security,
-    digital forensics and applied research. I write up CTF challenges,
-    document personal projects and share research as I work through
-    my degree.
+    Cyber security graduate with a focus on offensive security. I write up CTF challenges,
+    document personal projects and share research as I continue to learn and grow in the field.
   location: "United Kingdom"
-  avatar: ""               # set to e.g. /assets/images/avatar.jpg once you've added a photo
-  email: "you@example.com"
-  github: "yourusername"
-  linkedin: "yourusername"
+  avatar: "/assets/images/avatar.png"               # set to e.g. /assets/images/avatar.jpg once you've added a photo
+  email: "rossgreenall@gmail.com"
+  github: "rossgr"
+  linkedin: "Ross Greenall"
   twitter: ""        # leave blank to hide
-  tryhackme: ""       # leave blank to hide
-  hackthebox: ""      # leave blank to hide
+  tryhackme: "https://tryhackme.com/p/rossgr"       # leave blank to hide
+  hackthebox: "@rossgr"      # leave blank to hide
   cv: ""              # path to a PDF CV, e.g. /assets/cv.pdf — leave blank to hide
 
 # ─────────────────────────────────────────────
