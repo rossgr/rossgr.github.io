@@ -1,45 +1,27 @@
 ---
-title: "A Survey of Detection Techniques for IoT Botnet Traffic"
-date: 2026-02-14
-summary: "Coursework paper reviewing signature-based and machine-learning approaches to detecting IoT botnet command-and-control traffic."
-authors: "Your Name"
-venue: "MSc Coursework — Module Name"
-pdf: "/assets/papers/iot-botnet-detection.pdf"
-tags: [research, iot, machine-learning]
+title: "Comparative Analysis and Implementation of the Aztec Space-Filling Curve for Static Malware Visualisation of Portable Executable Files"
+date: 2026-06-12
+summary: "Dissertation for undergraduate Cyber Degree focused on applying Space-Filling Curves to Malware visualisations."
+authors: "Ross Greenall"
+venue: "BSc Coursework — Synoptic Project"
+pdf: "/assets/papers/space-filling.pdf"
+tags: [research, malware, space-filling-curves]
 ---
-
-> This is an example paper page included with the site template. Replace it with your own
-> abstract and upload your PDF to `assets/papers/`, or delete this file entirely.
 
 ## Abstract
 
-A concise abstract (150–250 words) summarising the motivation, approach, and findings of the
-paper. This text is shown on the page itself, while the full document is available as a PDF via
-the download button above.
+Space-filling curves (SFCs) have been widely adopted in a range of computational applications for a
+number of years, particularly in cases where 1D data is mapped into 2D space whilst preserving locality.
+In the context of malware analysis, the properties of SFCs provide a useful basis for visualising Portable
+Executable (PE) files, allowing for binary structure to be rendered as images for static analysis. This
+paper discusses the application of a recently defined SFC, the Aztec curve, as an alternative approach for
+visualising PE files. By comparing its behaviour to well-established SFCs, the Hilbert curve and Z-order
+curve, the Aztec curve’s performance can be better understood. A visualisation pipeline was developed
+to convert benign and malicious PE files into 2D visualisations using byteclasses, with each visualisation
+being evaluated using a standard set of quantitative metrics. The results from these metrics showcased
+that the Hilbert and Aztec curves both outperformed the Z-order curve in locality preservation. Other
+metrics such as Shannon entropy and spatial entropy were utilised but were mostly affected by PE file
+structure rather than curve selection. However, in some metrics, the Aztec curve showed promise with
+values that were slightly improved over that of the Hilbert and Z-order curves, motivating the need for
+further investigation with a more substantial dataset of diverse PE files to confirm the observed trends.
 
-## Summary
-
-A longer summary or table of contents for the paper, written in your own words — for example,
-the structure of the report (introduction, related work, methodology, results, conclusion) and
-the key contributions or findings.
-
-## Citation
-
-If you'd like others to be able to cite this work, you can include a formatted citation here,
-for example in BibTeX:
-
-```bibtex
-@misc{yourname2026iotbotnet,
-  author = {Your Name},
-  title  = {A Survey of Detection Techniques for IoT Botnet Traffic},
-  year   = {2026},
-  note   = {MSc Coursework}
-}
-```
-
-## Notes
-
-To enable the "Download PDF" button at the top of this page, add your PDF file to
-`assets/papers/` and update the `pdf` field in this file's front matter to match its filename.
-If you don't have a PDF to share, remove the `pdf` line from the front matter and the button
-will be hidden automatically.
