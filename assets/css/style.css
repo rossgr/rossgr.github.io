@@ -409,7 +409,7 @@ textarea:focus-visible {
 }
 
 .profile-sheet__header {
-  background: var(--color-ink);
+  background: var(--color-accent);
   color: #fff;
   font-family: var(--font-mono);
   font-size: 0.75rem;
@@ -498,12 +498,13 @@ textarea:focus-visible {
 }
 
 .btn--primary {
-  background: var(--color-accent);
+  background: transparent;
+  border-color: var(--color-accent);
   color: #fff;
 }
 
 .btn--primary:hover {
-  background: var(--color-ink-soft);
+  background: var(--color-accent);
 }
 
 .btn--ghost {
@@ -665,7 +666,8 @@ textarea:focus-visible {
 }
 
 [data-theme="dark"] .tag {
-  background: var(--color-ink);
+  background: transparent;
+  border-color: var(--color-paper);
 }
 
 /* Classification-style badge (TLP-inspired) */
