@@ -71,27 +71,4 @@ permalink: /contact/
     </ul>
   </div>
 
-  <div>
-    <h2>Send a message</h2>
-    <p>
-      This form uses <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>, a free
-      service that lets static sites like this one receive form submissions by email — no backend
-      required. Replace <code>your-form-id</code> below with your own Formspree endpoint to activate it.
-    </p>
-    <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-      <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="_replyto" required>
-      </div>
-      <div>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
-      <button type="submit" class="btn btn--primary">Send message</button>
-    </form>
-  </div>
 </div>

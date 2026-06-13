@@ -498,7 +498,7 @@ textarea:focus-visible {
 }
 
 .btn--primary {
-  background: var(--color-ink);
+  background: var(--color-accent);
   color: #fff;
 }
 
