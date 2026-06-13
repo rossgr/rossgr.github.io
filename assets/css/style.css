@@ -905,7 +905,7 @@ textarea:focus-visible {
 }
 
 .filter-bar button.is-active {
-  background: var(--color-ink);
+  background: var(--color-accent);
   color: #fff;
   border-color: var(--color-ink);
 }
