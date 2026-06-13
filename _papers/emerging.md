@@ -1,9 +1,9 @@
 ---
 title: "Assessing the Security Posture of VR Technologies: Threats, Vulnerabilities, and Opportunities for Enhanced Protection."
 date: 2026-01-12
-summary: "Incident response report completed as part of Incident Response module."
+summary: "Forensic Investigation and testing of the Meta Quest 2 VR headset, utilising digital forensics tools to reveal potential threats and opportunities to enhance security,"
 authors: "Ross Greenall"
-venue: "BSc Coursework — Incident Response"
+venue: "BSc Coursework — Emerging Issues in Privacy, Policy & Security"
 pdf: "/assets/papers/emerging.pdf"
 tags: [vr, privacy, security]
 ---

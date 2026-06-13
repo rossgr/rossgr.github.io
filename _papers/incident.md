@@ -4,7 +4,7 @@ date: 2025-06-12
 summary: "Incident response report completed as part of Incident Response module."
 authors: "Ross Greenall"
 venue: "BSc Coursework — Incident Response"
-pdf: "/assets/papers/bae.pdf"
+pdf: "/assets/papers/ir.pdf"
 tags: [security, incident-response, defence]
 ---
 
