@@ -40,7 +40,7 @@ permalink: /about/
 
   <div>
     <p>
-      Hi, I'm {{ site.author.name }} — an graduate in {{ site.author.role | downcase }}.
+      Hi, I'm {{ site.author.name }} — a BSc (Hons) graduate in {{ site.author.role | downcase }}.
       I'm interested in offensive security, network defence and application security, and I use this site
       to keep a public log of the CTF challenges, labs, projects and work I produce along the way.
     </p>
